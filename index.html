@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Battle Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div id="h1">
+        <h1> Space Battle OOPS </h1>
+    </div>
+    <body>
+
+        <div class="bodyContainer">
+            <div class="mainCharacterView left" >
+                    <div class="nameBox">USS Assembly</div>
+                    <div class="playerImage"></div>
+                    <div class="playerStats">
+                    <h4>Hull : <span id="usHull">20</span></h4>
+                    <h4>FirePower : 5</h4>
+                    <h4>Accuracy : .7 </h4>
+                    </div>
+            </div>
+            <!--Alien Element -->
+            <div class="mainCharacterView right">
+                <div id="alienNameBox" class="nameBox">Alien</div>
+                <div class="alienImage"></div>
+                    <div class="alienStats">
+                        <h4>Hull : <span id="alienHull">0</span></h4>
+                        <h4>FirePower : <span id="Firepower">0</span></h4>
+                        <h4>Accuracy : <span id="Accuracy">0</span> </h4>
+                    </div>
+            </div>
+            <div id="popup">
+                <div class="modal-header">
+                    <div class="banner"></div>
+                </div>
+                <!-- <div class="modal-body">
+                    <h2>Would you like to retreat?</h2>
+                    <button id="0" onclick="attack(this.id)">NEVER!</button>
+                    <button onclick="giveUp()">Yes...</button> -->
+                </div>
+            </div>
+            <div id="retreat">
+                <div class="modal-header">
+                    <div class="banner" id="winOrLose"></div>
+                </div>
+                <div id="modal-body2">
+                    <h2 id="choice"></h2>
+                    <h3 id="fate"></h3>
+                    <h3 id="lives"></h3>
+                </div>
+            </div>
+            <div id="moves">
+                <div class="modal-body">
+                    <h2>You Shot at the Alien Ship...</h2>
+                    <h2 id="usMove"></h2>
+                    <h2 id="theyShoot"></h2>
+                    <h2 id="theyMove"></h2>
+                    <h2 id="destroyed"></h2>
+                </div>
+            </div>    
+            <div id="overlay"></div>
+            <div id="confetti"></div>
+            <div id="explosion"></div>
+
+
+        <!-- Button to start the game -->
+        <button onclick="Attack()">Attack!</button>
+        <button onclick="Retreat()">Retreat!</button>
+        <button onclick="location.reload();">Restart</button>
+        <button id="1" onclick="attack(this.id)">Start Game</button>
+
+
+
+        <!-- Space battle area -->
+        <div id="spaceBattleArea"></div>
+
+
+        <script src="app.js" async defer></script>
+    </body>
+    <div class="footer"><h6>Developed By Daniel&Co™ Gaming Company</h6>
+</html>
+
+
